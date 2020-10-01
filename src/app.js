@@ -80,8 +80,6 @@ app.get("/products", (req, res) => {
             error: "Search parameter must be provided!"
         })
     }
-
-    console.log(req.query);
     res.send({
         products: []
     })
@@ -104,5 +102,4 @@ app.get("*", (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log('Server is up at 3000 port')
 })
