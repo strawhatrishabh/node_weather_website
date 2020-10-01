@@ -63,10 +63,12 @@ app.get('/weather', (req, res) => {
                         error: forecastError
                     })
                 } else {
+                    console.log(forecastData)
                     return res.send ({
                         location: req.query.address,
                         forecast: forecastData.weather_descriptions[0],
                         temperature: forecastData.temperature,
+                        windSpeed: forecastData.wind_speed
                     })
                 }
             })
