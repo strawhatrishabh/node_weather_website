@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<HTML>
+
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="images/weather.png">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+             <p>Use this site to get your weather</p>
+
+            <form>
+                <input placeholder="Enter Location" id="inputLocation" value="">
+                <button>Search</button>
+            </form>
+
+            <p id="forecastId"></p>
+            <p id="temperatureId"></p>
+            <p id="locationId"></p>
+
+        </div>
+        
+        {{>footer}}
+
+        <script src="js/main.js"></script>
+    </body>
+
+</HTML>
